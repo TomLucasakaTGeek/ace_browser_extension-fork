@@ -1,12 +1,18 @@
 {
-  "manifest_version": 3,
   "name": "ACT",
+  "description": "Color blindness, dyslexia, audio impairments",
   "version": "1.0",
-  
+  "manifest_version": 3,
+
+  "background": {
+    "service_worker": "service.js"
+  },
   "action": {
+    "default_title": "First Page",
     "default_popup": "index.html"  
   },
   "permissions": [
-    "storage"
+    "storage",
+    "scripting"
   ]
 }
